@@ -20,7 +20,7 @@ import java.util.Properties;
 public class KafkaTest {
 
 
-    @Test
+    //@Test
     public void consumer(){
         Properties props = new Properties();
         props.put("bootstrap.servers", "127.0.0.1:9092");
@@ -47,7 +47,7 @@ public class KafkaTest {
         }
     }
 
-    @Test
+    //@Test
     public void threadConsumer() throws InterruptedException {
         Properties props = new Properties();
         props.put("bootstrap.servers", "127.0.0.1:9092");
