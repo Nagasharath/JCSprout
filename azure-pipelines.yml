@@ -20,5 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- publish: $(System.DefaultWorkingDirectory)/bin/Demojar_1
-  artifact: demojar_1
+- task: Publish    
+  inputs:
+    publish: $(System.DefaultWorkingDirectory)/bin/Demojar_1
+    artifact: demojar_1
